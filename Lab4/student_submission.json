@@ -1,0 +1,25 @@
+{
+    "student_ids": [
+        "9220302",
+        "9000001"
+    ],
+    "epochs_run_per_model": 2,
+    "metrics": [
+        {
+            "modality": "Satellite Only",
+            "test_iou": 0.19302392300910104,
+            "test_dice": 0.30802780619877174
+        },
+        {
+            "modality": "Map Only",
+            "test_iou": 0.9189276272679244,
+            "test_dice": 0.9571428936386089
+        },
+        {
+            "modality": "Combined",
+            "test_iou": 0.8531567977725105,
+            "test_dice": 0.9197087647293843
+        }
+    ],
+    "analytical_conclusion": "In this run, the best IoU was achieved by Map Only. Combined input often improves robustness because it fuses spectral texture from satellite imagery with strong cartographic priors from map renderings."
+}
